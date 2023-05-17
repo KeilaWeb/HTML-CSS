@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Raleway';
+            src: url('fontes/Raleway-Regular.ttf') format('opentype'), url('fontes/Raleway-Regular.woff2') format('truetype');
+            font-weight: normal;
+            font-style: regular;
+            font-family: 'Raleway2';
+            src: url(fontes/Raleway-Bold.ttf) format(openType), url(fontes/Raleway-Bold.woff2) format(openType);
+            font-weight: bold;
+            font-style: normal;
+
+            /*
+            Tipos de format(): 
+            - openType (otf);
+            - truetype (ttf);
+            - embedded-opentype
+            - truetype-aat (apple advanced tipography)
+            - svg
+            */
+        }
+        body {
+            font-family: 'Raleway', sans-serif;  
+            font-size: 3m;
+            font-weight: normal;
+            color: #1b1b1b;
+
+        }
+
+        h1 {
+            font-family: 'Raleway2', cursive;
+            font-size: 3m;
+            font-weight: bold;
+            color: #1b1b1b;
+        }
+
+        h2 {
+            font-family: 'Raleway', cursive;            
+            font-size: 2m;
+            font-weight: bold;
+            color: #1b1b1b;
+        }
+
+        h3{
+            font-family: 'Raleway', sans-serif;  
+            font-size: 3m;
+            font-weight: normal;
+            color: #1b1b1b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes do Google Fonts</h1>
+    <h2>Sabe como usar pesos em medidas diferentes para fontes</h2>
+    <h3>Já ouviu falar na shorthand font para simplificar tudo em CSS?</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum aliquid eveniet quaerat nisi necessitatibus perspiciatis quidem, magni ea, libero sed voluptatibus odio perferendis obcaecati quia adipisci. Odit maiores optio libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse aperiam molestias expedita tenetur facilis quas odio ut porro ducimus praesentium unde hic voluptates suscipit iusto tempora, odit sint repellat?</p>
+    <hr>
+    <h2>Utilizando Peso, estilo e shorthand font</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt impedit quo voluptatibus cupiditate deleniti perspiciatis repudiandae placeat, eaque a odit nesciunt eligendi harum dignissimos pariatur natus quas quia? Reprehenderit, eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nihil natus adipisci magnam tenetur. Molestias praesentium, ullam corrupti aspernatur nisi ducimus est excepturi, vel consequatur neque, dicta labore recusandae eos!</p>
+</body>
+</html>

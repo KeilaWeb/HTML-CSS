@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Formatações de textos eum pouco de style </title>
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título H1</h1>
+    <h2>Subtítulo H2</h2>
+    <h3>Texto H3</h3>
+    <h4>Texto H4</h4>
+    <h5>Texto H5</h5>
+    <h6>Texto H6</h6>
+    <p>Parágrafo</p>
+    <h2>O significado é mais importante do que a forma</h2>
+    <hr>
+    <h2>Italico e endereço</h2>
+    Endereço com address > Eu moro na <address>Rua dos Capixabas, SC</address>
+    
+    <hr>
+    <h2>Texto Marcado</h2>
+    <p>Marcamos um texto <mark>usando a tag MARK</mark> </p>
+    <p>Nessa frase temos o <strong>negrito com strong</strong> </p>
+    <p>Termo <i>itálico clicando sem semântica CTRL+SHIFT+P > i > Enter</i> </p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> com a tag EM (com semântica)</p> 
+    <p>Temos um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <h3>Texto deletado</h3>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h3>Texto Inserido</h3>
+    <p>Podemos marcar <ins>texto como inserido</ins> para dar uma ênfase  e indicar que ele foi adicionado depois</p>
+    <p>Exxiste também o <u>sublinhado</u> U que não é semântica </p>
+    <h3>Texto sobrescrito</h3>
+    <p>Para inserir coisas do tipo x<sup>20</sup> + 3</p>
+    <h3>Texto subscrito</h3>
+    <p>Para inserir coisas tipo H<sub>2</sub>O</p>
+    <hr>
+    <h3>Outras Formatações</h3>
+    <h4>Código fonte / Pré formatação</h4>
+    <p>O <code>comando getelementById</code>('teste') é escrito em linguagem javaScript</p>
+    <p>Envelopa com <mark>CTL+SHIFT+P</mark> com o comando <mark>PRÈ</mark> ele formata como escreve</p>
+    <PRE>
+        <code>
+    num = int(input(´Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é ÍMPAR)
+        </code>
+    </PRE>
+    <hr>
+    <h3>Citações Simples</h3>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--Envelopa em q para dar sentido-->
+    <h3>Citações completas</h3>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Construindo_Web_Sites_Para_Leigos_Tradu/xlLcAwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        Um Web site deve ser atualizado, pelo menos uma vez por mês para manter os visitantes interessados em voltar
+    </blockquote>
+    <hr>
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascadind Style Sheets">CSS</abbr>. Estou adorando</p> <!--Envelopa com abbr, apenas para significado da sigla-->
+  </body>
+</html>

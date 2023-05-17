@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <h2>Adaptando ao tamanho de dispositivos</h2>
+    <picture>
+        <p>Coloque na ordem do menor dispositivo para o maior com source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png" </p>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png" >
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    <h2>Reproduzindo áudios em HTML5</h2>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="imagens/TypeTrapBeatArabe.mp3" type="audio/mpeg"> <!--compatibilidade mp3-->
+        <source src="imagens/TypeTrapBeatArabe.ogg" type="audio/ogg" > <!--compatibilidade ogg-->
+        <source src="imagens/TypeTrapBeatArabe.wav" type="audio/wav"><!--compatibilidade wav-->
+        <p>Para baixar o arquivo <a href="imagens/TypeTrapBeatArabe.mp3">Clique aqui</a></p>
+    </audio>
+    <hr>
+    <h2>Vídeos Hospedados localmente</h2>
+    <video width="500" poster="imagens/imgvideo.png" controls autoplay loop>
+        <source src="imagens/easteregg.mp4" type="video/mp4"> <!--Coloque também as compatibilidade em ogg e wav para outros navegadores-->
+    </video>
+    <hr>
+    <h2>Inserindo vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hd7Ycaj61xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

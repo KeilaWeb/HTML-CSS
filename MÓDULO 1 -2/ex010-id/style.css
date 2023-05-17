@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+/*
+    em HTM é id = em CSS é #
+    em HTML é class = em CSS é .
+*/
+/*
+   id sobrepõe as configurações de class
+*/
+body {
+    background-color: #fda14c0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #7D5025;
+}
+
+h2 {
+    color: #CC6300;
+}
+
+h3 {
+    color: #CC6300;
+}
+
+#principal {
+    text-align: left;
+    color: #fd3300;
+
+}
+
+#outroid {
+    color: #a53400;
+}
+
+.basico {
+    color: #7D5025;
+}
+
+.intermediario {
+    color: #CC6300;
+}
+
+.avancado {
+    color: #FC7A00;
+}
+
+.destaque {
+    background-color: #fc7a002d;
+}
