@@ -6,25 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com imagens de fundo</title>
     <style>
-        div.quadrado {
-            display: inline-block;
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: lightgreen;
+        body {
+            background-image: url('imagens/wallpaper004.jpg');
         }
-    </style>
+
+        div {
+        display: inline-block;
+        border: 2px solid #3a3a3a;
+        border-radius: 10px;
+        background-color: lightgray;
+        width: 200px;
+        padding: 20px;    
+    }
+
+    div#q1 {
+        background-color: skyblue;
+    }
+
+    div#q2 {
+        background-image: linear-gradient(to bottom, yellow, #ff4800);
+    }
+
+    div#q3 {
+        background-image: url('imagens/wallpaper002.jpg')
+    }
+</style>
 </head>
 <body>
     <div classe="quadrado" id="q1">
-
+        <h3>Ola</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quae inventore voluptates quia non esse, vero necessitatibus cumque nihil, fuga excepturi maxime praesentium possimus odio autem earum iure rerum amet.</p>
     </div>
 
     <div classe="quadrado" id="q2">
-
+        <h3>Ola</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quae inventore voluptates quia non esse, vero necessitatibus cumque nihil, fuga excepturi maxime praesentium possimus odio autem earum iure rerum amet.</p>
     </div>
 
     <div classe="quadrado" id="q3">
-
+        <h3>Ola</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quae inventore voluptates quia non esse, vero necessitatibus cumque nihil, fuga excepturi maxime praesentium possimus odio autem earum iure rerum amet.</p>
     </div>
 </body>
 </html>
