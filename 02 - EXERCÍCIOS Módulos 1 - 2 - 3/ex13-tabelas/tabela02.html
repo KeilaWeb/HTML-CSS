@@ -13,22 +13,39 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
-            border: 1px solid black;
+            border: 1px solid #000000;
             padding: 10px;
         }
 
-        thead, tfoot {
-            background-color: gray;
-            color: white;
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(0, 128, 0, 0.144);
         }
 
-        td.num {
-            text-align: right;
-            vertical-align: middle;
+        thead, tfoot {
+            background-color: green;
+            color: white;
+        }    
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: green;;
         }
+
+        tbody > tr:nth-child(even) { /* pares */
+            background-color: #c2ffc2;
+        }
+        tbody > tr:nth-child(odd) {  /* impares */
+            background-color: #ffffe6; 
+        }
+
     </style>
 </head>
 <body>
@@ -36,6 +53,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,128 +62,129 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População censo 2022</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 200px;">População censo 2022</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td classe="num">46 024 937</td>
+                <td style="text-align: right;" >46 024 937</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td classe="num">20 732 660</td>
+                <td style="text-align: right;">20 732 660</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td classe="num">16 615 526</td>
+                <td style="text-align: right;">16 615 526</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td classe="num">14 659 023</td>
+                <td style="text-align: right;">14 659 023</td>
             </tr>
             <tr>
                 <td> Paraná</td>
-                <td classe="num">11 835 379</td>
+                <td style="text-align: right;">11 835 379</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td classe="num">11 088 065</td>
+                <td style="text-align: right;">11 088 065</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td classe="num">9 051 113</td>
+                <td style="text-align: right;">9 051 113</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td classe="num">8 936 431</td>
+                <td style="text-align: right;">8 936 431</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td classe="num">8 442 962</td>
+                <td style="text-align: right;">8 442 962</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td classe="num">7 762 154</td>
+                <td style="text-align: right;">7 762 154</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td classe="num">6 950 976</td>
+                <td style="text-align: right;">6 950 976</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>6 800 605</td>
+                <td style="text-align: right;">6 800 605</td>
             </tr>
             <tr>
                 <td>Espírito Santo</td>
-                <td classe="num">4 108 508</td>
+                <td style="text-align: right;">4 108 508</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td classe="num">4 030 961</td>
+                <td style="text-align: right;">4 030 961</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td classe="num">3 952 262</td>
+                <td style="text-align: right;">3 952 262</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td classe="num">3 784 239</td>
+                <td style="text-align: right;">3 784 239</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td classe="num">3 303 953</td>
+                <td style="text-align: right;">3 303 953</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td classe="num">3 270 174</td>
+                <td style="text-align: right;">3 270 174</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td classe="num">3 125 254</td>
+                <td style="text-align: right;">3 125 254</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td classe="num">2 923 369</td>
+                <td style="text-align: right;">2 923 369</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td classe="num">2 833 742</td>
+                <td style="text-align: right;">2 833 742</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
-                <td classe="num">2 211 868</td>
+                <td style="text-align: right;">2 211 868</td>
             </tr>
             <tr>
                 <td>Rondônia</td>
-                <td classe="num">1 616 379</td>
+                <td style="text-align: right;">1 616 379</td>
             </tr>
             <tr>
                 <td>Tocantins</td>
-                <td classe="num"> 1 584 306</td>
+                <td style="text-align: right;"> 1 584 306</td>
             </tr>
             <tr>
                 <td>Acre</td>
-                <td classe="num">829 780</td>
+                <td style="text-align: right;">829 780</td>
             </tr>
             <tr>
                 <td>Amapá</td>
-                <td classe="num">774 268</td>
+                <td style="text-align: right;">774 268</td>
             </tr>
             <tr>
                 <td>Roraima</td>
-                <td classe="num">634 805</td>
+                <td style="text-align: right;">634 805</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>207.883.699</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td style="text-align: right;" ><strong>207.883.699</strong></td>
             </tr>
         </tfoot>
-    </table>
+    </table>    
 </body>
 </html>
