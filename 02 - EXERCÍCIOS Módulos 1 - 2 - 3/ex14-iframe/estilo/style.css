@@ -33,7 +33,14 @@ section {
 iframe {
     width: 700px;
     height: 400px;    
-    padding: 40px 0px 40px 0px;
+    
+}
+
+iframe#tela {
+    width: 95vw;
+    height: 400px;
+    border: 2px solid black;
+    margin: 40px 0px 40px 0px;
 }
 
 table {
