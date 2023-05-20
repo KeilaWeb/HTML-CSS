@@ -6,172 +6,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio das Tabelas</title>
     <style>
+        :root {
+            --cor01: #212529;
+            --cor02: #343a40;
+            --cor03: #495057;
+            --cor04: #ee6c4d;
+            --cor05: #ca5a3e;
+        }
+
+
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: darkslategrey;            
-        }      
+            color: var(--cor03);           
+        } 
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header {
+            background-color: var(--cor03);
+            padding: 20px 60px 20px 60px;
+            color: white;
+            line-height: 3em;
+        }
+
+        section {
+            padding: 60px;
+        }
         
         table {
             width: 600px;
+            padding: 30px;            
             border-collapse: collapse;
             position: relative;
         }
 
-        thead {            
-            height: 20px;
-            background-color: black;
+        thead {                 
+            background-color: var(--cor03);
             color: white; 
                        
         }
 
         thead > tr > th {
-            border: 2px solid rgba(15, 15, 15, 0.801);
+            padding: 14px;
+            border: 1px solid var(--cor02);
         }
 
         tr, td {
-            border: 1px solid black;         
+            border: 1px solid var(--cor02);         
             padding: 14px;
             text-align: center;            
         }
 
-        footer {
-            background-color: black;
+        hr {
+            color: var(--cor04);
+        }
+
+        td.bold {
+            font-weight: bold;
+        }
+
+        tr.menu {
+            background-color: var(--cor03);
             color: white;
+        }
+
+        footer {
+            background-color: var(--cor02);
+            color: white;
+            line-height: 2em;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         a {
-            color: tomato;
+            color: var(--cor04);
         }
     </style>
 </head>
 <body>
-    <h1>Desafio da tabela</h1>
-    <h2>Tabelas utilizando colspan e rowspan</h2>
-    <h3>Desafio 1</h3>
-    <table>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td rowspan="2">3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td colspan="3">8</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td rowspan="2">10</td>
-                <td colspan="2">11</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <h1>Desafio da tabela</h1>
+        <h2>Tabelas utilizando colspan e rowspan</h2>
+    </header>   
+    <section>
+        <h3>Desafio 1</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <hr>
-    <h3>Desafio 2</h3>
-    <table>
-        <thead>
-            <th>A</th>
-            <th>B</th>
-            <th>C</th>
-            <th>D</th>
-            <th>E</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="4">A</td>
-                <td rowspan="4">B</td>
-            </tr>
-            <tr>
-                <td rowspan="4">C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-            </tr>
-            <tr>
-                <td>G</td>
-                <td>H</td>
-                <td>I</td>
-            </tr>
-            <tr>
-                <td>J</td>
-                <td>L</td>
-                <td>M</td>
-            </tr>
-            <tr>
-                <td colspan="4">N</td>
-            </tr>
-        </tbody>
-    </table>
+    <section>
+        <h3>Desafio 2</h3>
+        <table>
+            <thead>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <hr>
 
-    <h3>Desafio 3</h3>
-    <table>
-        <caption>
-            <h3>Filmes Favoritos</h3>
-        </caption>
-        <thead>
-            
-            <tr>
-                <th scope="col">Grupos</th>
-                <th scope="col">Nomes</th>
-                <th colspan="3" scope="colgroup">Filmes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3" scope="rowgroup">Mulheres</td>
-                <td>Ana maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>                
-            </tr>
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-            </tr>
-            <tr>
-                <td>Cláudia</td>
-                <td>Oblivion</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <td rowspan="3" scope="rowgroup">Homens</td>
-                <td>Bruno</td>
-                <td>Intocáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars 5</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-        </tbody>        
-    </table>
+    <section>
+        <h3>Desafio 3</h3>
+        <table>
+            <caption>
+                <h3>Filmes Favoritos</h3>
+            </caption>
+            <thead>
+        
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3" scope="rowgroup">Mulheres</td>
+                    <td>Ana maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" scope="rowgroup">Homens</td>
+                    <td>Bruno</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars 5</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <hr>
+    <section>
+        <h3>Desafio 4</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Área</th>
+                    <th rowspan="2" scope="rowgroup">Disciplina</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="rowgroup">Média</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" scope="rowgroup" class="bold">Exatas</td>
+                    <td>Matemática</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>10.0</td>
+                    <td>9.0</td>
+                    <td>9.5</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>9.5</td>
+                    <td>9.5</td>
+                    <td>9.5</td>
+                </tr>
+                <tr class="menu">
+                    <td colspan="4" scope="colgroup" class="bold">Média de Exatas</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" scope="rowgroup" class="bold">Humanas</td>
+                    <td>História</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>9.0</td>
+                    <td>8.0</td>
+                    <td>8.5</td>
+                </tr>
+                <tr class="menu">
+                    <td colspan="4" class="bold">Média de Humanas</td>
+                    <td class="bold">10.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <footer>
         <h3>Desafio de Tabelas do <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/aulas/modulo-03/modulos/capitulo-21-aula-11-escopos-de-grupo-2/" target="_blank">Curso de HTML e CSS do Curso em Vídeo</a></h3>
         <p>Desenvolvido por Keila Barreto</p>
