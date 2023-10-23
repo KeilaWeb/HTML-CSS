@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 03</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+        }
+        fieldset{
+            padding: 16px;
+            margin: 16px;
+            border-color: brown;
+            border-radius: 10px;
+
+            background-color: rgb(248, 248, 248);
+        }
+        legend{
+            font-style: italic;
+            font-weight: bold;        
+        }
+        
+    </style>
 </head>
 <body>
     <h2>Formulário 03</h2>
@@ -28,10 +47,37 @@
                 <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d[4,5]-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
             </p>
             <p>
+                <label for="iest">Estado que você mora</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>                    
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>                    
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Contador</option>
+                    <option>Professor</option>
+                </datalist>
+            </p>
+            <p>
                 <label for="ifoto">Foto de perfil</label>
                 <input type="file" name="foto" id="ifoto">
             </p>          
         </fieldset>
+
+
         <fieldset>
             <legend>Outras informações</legend>
             <p>
@@ -52,6 +98,13 @@
             <input type="checkbox" name="esfut" id="iesfut"><label for= "iesfut">Futebol</label><br>
             <input type="checkbox" name="esten" id="iesten"><label for= "iesten">Tênis</label><br>
             <input type="checkbox" name="esnat" id="iesnat"><label for= "iesnat">Natação</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagens do usuário</legend>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+            
         </fieldset>
 
         <p>
