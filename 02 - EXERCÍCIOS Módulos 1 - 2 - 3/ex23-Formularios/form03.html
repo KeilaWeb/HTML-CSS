@@ -6,34 +6,29 @@
     <title>Formulario 03</title>
 </head>
 <body>
-    <h1>Formulario 03</h1>  
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome"> Nome: </label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
-        </p>
-        <p>
-            <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes" value="2023-10">
-        </p>
-        <p>
-            <label for="idia">Dia da prova</label>
-            <input type="date" name="dia" value="2023-10-23">
-        </p>
-        <p>
-            <label for="ihora">Horário da prova</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
+    <h2>Formulário 03</h2>
+    <h3>Inserindo controle de telefone e e-mail</h3>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="4" maxlength="20" required>
+            </p>
+
+            <p>
+                <label for="imail">E-mail: </label>
+                <input type="email" name="email" id="imail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d[4,5]-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-
-    </form>  
+    </form>
     <a href="index.html"> <-Form 01</a>
     <a href="form02.html"> <-Form 02</a>
 </body>

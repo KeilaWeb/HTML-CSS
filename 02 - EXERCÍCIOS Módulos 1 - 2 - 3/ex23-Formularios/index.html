@@ -19,6 +19,21 @@
             <input type="text" name="isobrenome" id="isobrenome"></p>
             <p><input type="submit" value="Enviar"></p>
         </form>
+        <h2>Melhorando o formulário</h2>
+        
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="iusu">Usuário: </label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Seu username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="Sua senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
         <a href="form02.html">Form 02</a>
         <a href="form03.html">Form 03</a>
 </body>

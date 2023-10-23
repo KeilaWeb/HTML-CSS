@@ -6,20 +6,35 @@
     <title>Formulário 02</title>
 </head>
 <body>
-    <h1>Formulário 02</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="iusu">Usuário: </label>
-        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Seu username">
+    <h1>Formulario 02</h1> 
+    <h3>Controles de numeros, data e hora</h3> 
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome"> Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
         </p>
         <p>
-            <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20" placeholder="Sua senha" autocomplete="current-password">
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-10">
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" value="2023-10-23">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora">
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-    </form>
+    </form>     
+
     <a href="index.html"> <-Form 01</a>
     <a href="form03.html">Form 03 -></a>
 </body>
