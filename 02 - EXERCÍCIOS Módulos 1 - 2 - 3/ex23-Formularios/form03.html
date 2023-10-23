@@ -8,11 +8,15 @@
 <body>
     <h2>Formulário 03</h2>
     <h3>Inserindo controle de telefone e e-mail</h3>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
-            <legend>Dados Pessoais</legend>
+            <legend>Dados Pessoais</legend>            
             <p><label for="inome">Nome: </label>
                 <input type="text" name="nome" id="inome" minlength="4" maxlength="20" required>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Mascnulino</label>
+                <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem">Feminino</label>
             </p>
 
             <p>
@@ -23,7 +27,33 @@
                 <label for="itel">Telefone: </label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d[4,5]-\d{4}$" required placeholder="(xx) xxxxx-xxxx">
             </p>
+            <p>
+                <label for="ifoto">Foto de perfil</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>          
         </fieldset>
+        <fieldset>
+            <legend>Outras informações</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="'" max="5" value="2">
+            </p>
+                      
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for= "iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for= "iesfut">Futebol</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for= "iesten">Tênis</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for= "iesnat">Natação</label><br>
+        </fieldset>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
