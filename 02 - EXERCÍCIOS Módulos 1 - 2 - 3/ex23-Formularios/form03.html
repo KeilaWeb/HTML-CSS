@@ -34,6 +34,14 @@
                 <input type="text" name="nome" id="inome" minlength="4" maxlength="20" required>
             </p>
             <p>
+                <label for="iano">Em que ano você nasceu? </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é: </label>
+                <output id="iidade">0</output>
+            </p>
+            <p>
                 <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Mascnulino</label>
                 <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem">Feminino</label>
             </p>
@@ -101,9 +109,33 @@
         </fieldset>
 
         <fieldset>
-            <legend>Mensagens do usuário</legend>
-            <label for="imsg">Mensagem: </label><br>
-            <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+            <legend>Matematicando</legend>
+            <p>
+                <label for="in1">Número 1: </label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p> 
+                <label for="in2">Número 2: </label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma: </label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <label for="inum">Número: </label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)"  >
+                <output id="ival">5</output>
+            </p>
+            <p>
+
+            </p>
+
+
+            <p>
+                <label for="imsg">O que  você achou? </label><br>
+                <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+            </p>
             
         </fieldset>
 
@@ -112,6 +144,12 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
     <a href="index.html"> <-Form 01</a>
     <a href="form02.html"> <-Form 02</a>
 </body>
